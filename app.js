@@ -1,27 +1,34 @@
 const section1 = document.querySelector('.section1');
 const section2 = document.querySelector('.section2');
+const adminStudentBtn = document.querySelectorAll('.welcome button');
 
 
 const signinBtn = document.querySelector('.signin');
-const signupBtn = document.querySelector('.signup')
+const signupBtn = document.querySelector('.signup');
 
 
 const loginReg = document.querySelector('.reg');
 const RegBack = document.querySelector('.back'); 
 
 signinBtn.addEventListener('click',()=>{
-    
 });
-
-
-
 
 loginReg.addEventListener('click',()=>{
    section1.style.display = 'none';
-   section2.style.display = 'flex';
+   section2.style.display = 'flex';  
+
+   // adminStudentBtn.forEach(v =>{
+   //  v.style.display = 'flex';
+   // })
+    
 });
 
 RegBack.addEventListener('click',()=>{
    section2.style.display = 'none';
    section1.style.display = 'flex';
+
+   // adminStudentBtn.forEach(v =>{
+   //    v.style.display = 'none';
+   //   })
+
    });
